@@ -23,19 +23,32 @@ When you ask Claude to do something — create a form, build a document — it c
 
 ## How to add a skill to your Claude
 
-Claude skills in the claude.ai interface are loaded from a file system attached to your account. To add a skill from this repo:
+> **Note on plan requirements:** The Skills upload feature in Claude.ai may require a paid (Pro) subscription. If you don't see the Skills option in Settings, check whether your plan includes it before proceeding. Contact the Director of Digital Learning if you're unsure which plan you have.
 
-1. Open the `SKILL.md` file for the skill you want
+### Permanent install (recommended)
+
+This adds the skill to your Claude account so it loads automatically whenever you do a relevant task — no need to do anything each session.
+
+1. Download the skill folder from this repo (e.g. `html-print-form/`)
+2. Zip the folder so the folder itself is at the root of the zip file
+3. In Claude, go to **Settings → Customize → Skills → Upload**
+4. Upload the zip file
+5. Done — Claude will detect and load the skill automatically from now on
+
+### One-off use (no account required)
+
+If you just want to try a skill once, or your plan doesn't include Skills upload:
+
+1. Open the `SKILL.md` file for the skill you want (click it in GitHub, then click **Raw**)
 2. Copy the full contents
-3. In Claude, ask: *"Save this as a skill called `[skill-name]`"* and paste the content
+3. Paste it at the start of a Claude conversation with the message: *"Use this as your skill for this task"*
+4. Then ask for what you need as normal
 
-Claude will store it and load it automatically whenever you ask for a relevant task.
-
-> **Tip:** You can also just paste the skill content directly into a conversation and say *"use this skill for our session"* if you want a one-off use without saving it permanently.
+This works for any Claude plan but only applies to that conversation.
 
 ---
 
-## How to use a skill once added
+## How to use a skill once installed
 
 You don't need to do anything special — Claude recognises when a task matches a skill and loads it automatically. For example:
 
